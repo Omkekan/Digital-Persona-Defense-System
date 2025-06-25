@@ -66,12 +66,6 @@ With generative AI enabling hyper-realistic impersonation — deepfake voices, c
 
 ---
 
-# 📍 Roadmap: Digital Persona Defense System (DPDS)
-
-> A detailed build plan for creating an AI-powered system that detects and defends against impersonation, deepfakes, and voice cloning threats.
-
----
-
 ## 🧠 Project Objective
 
 The **Digital Persona Defense System (DPDS)** is a cybersecurity and AI hybrid platform designed to **analyze and protect a person’s digital identity** from being cloned or mimicked using AI technologies. It offers real-time analysis, cloneability risk scoring, and impersonation detection using advanced NLP and audio models.
@@ -80,87 +74,6 @@ This roadmap outlines the **phased development plan**, **technical architecture*
 
 ---
 
-## 🛠️ Project Phases
-
----
-
-### ✅ Phase 1: Research & Planning (3–5 days)
-
-- [ ] Study AI-driven impersonation threats (GPT mimicry, voice cloning, deepfakes).
-- [ ] Define user personas: influencers, executives, professionals.
-- [ ] Design UI flows: Dashboard, Upload & Analyze, Results page.
-- [ ] Define MVP features (text + voice detection).
-
----
-
-### 🔧 Phase 2: Core Infrastructure (7–10 days)
-
-- [ ] Set up monorepo: `/frontend`, `/backend`, `/ml`
-- [ ] Configure PostgreSQL, Redis, S3 buckets
-- [ ] Build REST API with FastAPI (or Django REST)
-- [ ] Secure user authentication (Firebase Auth or Auth0)
-- [ ] Create frontend skeleton in React/Next.js with Tailwind
-
----
-
-### 🧠 Phase 3: Text-Based Persona Detection (7–10 days)
-
-- [ ] Accept user input: real messages vs. impersonated ones
-- [ ] Analyze for AI-written patterns using:
-  - OpenAI Embeddings
-  - GPT detectors (GPTZero, custom fine-tunes)
-- [ ] Return results with confidence scores and recommendations
-- [ ] Save reports for dashboard visualization
-
----
-
-### 🔊 Phase 4: Voice Clone Detection (10–14 days)
-
-- [ ] Upload and process audio files
-- [ ] Use Whisper/DeepSpeech to transcribe audio
-- [ ] Extract features (MFCC, pitch, tone) and compare with user’s real samples
-- [ ] Build similarity index for detecting cloned voices
-- [ ] Visualize comparison in frontend
-
----
-
-### 📊 Phase 5: Risk Score Dashboard (5–7 days)
-
-- [ ] Generate composite “Clone Risk Score” based on:
-  - Text footprint
-  - Voice availability
-  - Social data exposure (later phase)
-- [ ] Visualize via D3.js or Chart.js
-- [ ] Provide user-specific suggestions to reduce risk
-
----
-
-### 🌐 Phase 6: Persona Web Scanner (7–10 days)
-
-- [ ] Crawl user-linked public profiles
-- [ ] Extract linguistic, biometric, and visual data exposure
-- [ ] Flag cloneable content (voice/video/text)
-- [ ] Show exposure heatmap and impersonation likelihood
-
----
-
-### 🧪 Phase 7: Testing & Security Hardening (5–7 days)
-
-- [ ] Write tests for API, ML models, UI
-- [ ] Test impersonation detection for accuracy + false positives
-- [ ] Apply rate-limiting, XSS/CSRF protection, file sanitization
-- [ ] Run basic penetration testing (e.g., OWASP ZAP)
-
----
-
-### 🚀 Phase 8: Deployment & Portfolio Polish (3–5 days)
-
-- [ ] Deploy frontend on Vercel / Netlify
-- [ ] Deploy backend via Render / GCP / AWS
-- [ ] Add domain, SSL, environment variables
-- [ ] Create polished README, pitch video, live demo link
-
----
 
 ## 📁 Repo Structure (Planned)
 
@@ -176,21 +89,6 @@ This roadmap outlines the **phased development plan**, **technical architecture*
 - ✅ Crawling Tool for Digital Exposure Assessment
 - ✅ Full-stack deployment + CI/CD
 - ✅ GitHub repo, landing page, video walkthrough
-
----
-
-## 📅 Timeline Summary
-
-| Phase                  | Duration     |
-|------------------------|--------------|
-| Research & Planning    | 3–5 days     |
-| Infrastructure Setup   | 7–10 days    |
-| Text Detection         | 7–10 days    |
-| Voice Detection        | 10–14 days   |
-| Risk Dashboard         | 5–7 days     |
-| Persona Scanner        | 7–10 days    |
-| Testing & Security     | 5–7 days     |
-| Final Deployment       | 3–5 days     |
 
 ---
 
